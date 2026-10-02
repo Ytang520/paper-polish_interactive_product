@@ -1,0 +1,32 @@
+* text=auto
+*.sh text eol=lf
+*.yml text eol=lf
+*.png binary
+*.ico binary
+
+# Defense in depth for source archives, including accidentally tracked local files.
+/.validation export-ignore
+/log.txt export-ignore
+/node_modules export-ignore
+/dist export-ignore
+/dist-electron export-ignore
+/release export-ignore
+/output export-ignore
+/backup_before_asar export-ignore
+/.codex export-ignore
+/.agents export-ignore
+*.sqlite export-ignore
+*.db export-ignore
+*.log export-ignore
+*.bak export-ignore
+config.json export-ignore
+config.temp.json export-ignore
+.env export-ignore
+.env.* export-ignore
+auth.json export-ignore
+accounts.json export-ignore
+cookies.json export-ignore
+cookies.txt export-ignore
+storage-state.json export-ignore
+.git-credentials export-ignore
+.netrc export-ignore
